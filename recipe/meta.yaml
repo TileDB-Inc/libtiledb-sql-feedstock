@@ -1,5 +1,5 @@
 {% set name = "libtiledb-sql-py" %}
-{% set version = "2.0.1" %}
+{% set version = "2.0.2" %}
 {% set sha256 = "e4855cd2a14bd5394ed95e21822c5dccca275ac08b70f7ec875ab2491a825cd6" %}
 
 package:
@@ -8,11 +8,12 @@ package:
 
 source:
   fn: {{ version }}.tar.gz
-  url: https://github.com/TileDB-Inc/TileDB-SQL-Py/archive/{{ version }}.tar.gz
+  #url: https://github.com/TileDB-Inc/TileDB-SQL-Py/archive/{{ version }}.tar.gz
+  url: https://github.com/TileDB-Inc/TileDB-SQL-Py/archive/ss/update-from-upstream.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   skip: True  # [win]
   skip: True  # [py2k]
 
