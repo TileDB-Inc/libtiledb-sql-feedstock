@@ -1,7 +1,5 @@
 MACOSX_DEPLOYMENT_TARGET:
-- '10.14'
-MACOSX_SDK_VERSION:
-- '10.14'
+- '11.0'
 bzip2:
 - '1'
 channel_sources:
@@ -21,7 +19,7 @@ libiconv:
 lz4_c:
 - 1.9.3
 macos_machine:
-- x86_64-apple-darwin13.4.0
+- arm64-apple-darwin20.0.0
 ncurses:
 - '6'
 openssl:
@@ -29,7 +27,7 @@ openssl:
 pcre2:
 - '10.40'
 target_platform:
-- osx-64
+- osx-arm64
 xz:
 - '5'
 zip_keys:
