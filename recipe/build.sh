@@ -1,6 +1,8 @@
 #!/bin/sh
 set -exo pipefail
 
+export CMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET}
+
 original_dir=$PWD
 export MARIADB_VERSION="mariadb-11.0.2"
 mkdir tmp
@@ -45,6 +47,7 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DWITH_UNIT_TESTS=OFF \
          -DINSTALL_MYSQLTESTDIR= \
          -DWITH_WSREP=OFF \
+	 -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
          ..
 make -j ${CPU_COUNT}
 make install
