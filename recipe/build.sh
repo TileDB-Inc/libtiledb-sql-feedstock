@@ -16,6 +16,9 @@ if [[ $target_platform =~ osx.* ]]; then
   export CFLAGS="${CFLAGS} -ULIBICONV_PLUG"
   export CXXFLAGS="${CXXFLAGS} -ULIBICONV_PLUG"
 fi
+if [[ $target_platform == osx-arm64  ]]; then
+  export CMAKE_SYSTEM_NAME_SETTING="-DCMAKE_SYSTEM_NAME=Darwin"
+fi
 
 #tar xf ${MARIADB_VERSION}.tar.gz \
 # Copy LICENSE File
@@ -48,6 +51,7 @@ cmake -DCMAKE_INSTALL_PREFIX="${PREFIX}" \
          -DINSTALL_MYSQLTESTDIR= \
          -DWITH_WSREP=OFF \
 	 -DCMAKE_OSX_DEPLOYMENT_TARGET=${MACOSX_DEPLOYMENT_TARGET} \
+	 ${CMAKE_SYSTEM_NAME_SETTING} \
          ..
 make -j ${CPU_COUNT}
 make install
