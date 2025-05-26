@@ -8,3 +8,5 @@ channel_targets:
   - tiledb for-cloud
 lz4_c:
   - 1.9.3
+pcre2:
+  - 10.44
