@@ -1,6 +1,6 @@
 {% set name = "libtiledb-sql" %}
-{% set version = "0.35.0" %}
-{% set sha256 = "6ca6069a1962f8250ab69a3740bd62be4e72bd0633ee5018e70b194cd217d55e" %}
+{% set version = "0.36.0" %}
+{% set sha256 = "e398be0c81be2a2c6d444d8dcaf3cfce701663d74dda9a000cb4ec5941559218" %}
 
 package:
   name: {{ name }}
@@ -19,7 +19,7 @@ build:
 
 requirements:
   build:
-    - cmake
+    - cmake <4
     - make  # [not win]
     - pkg-config  # [not win]
     - wget  # [unix]
@@ -31,7 +31,7 @@ requirements:
     - bison
   host:
     - openssl
-    - tiledb 2.27.*
+    - tiledb 2.28.*
     - libcurl
     - zlib
     - bzip2
@@ -72,6 +72,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - johnkerl
     - jdblischak
     - dudoslav
     - shelnutt2
