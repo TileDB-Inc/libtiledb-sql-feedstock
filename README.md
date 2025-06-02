@@ -1,6 +1,9 @@
 About libtiledb-sql-feedstock
 =============================
 
+> [!NOTE]
+> tiledb-sql is deprecated in favor of the TileDB-Tables repsitory which offers compatibility with DataFusion.
+
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/libtiledb-sql-feedstock/blob/main/LICENSE.txt)
 
 Home: https://tiledb.com
