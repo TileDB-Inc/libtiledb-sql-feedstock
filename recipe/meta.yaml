@@ -1,6 +1,6 @@
 {% set name = "libtiledb-sql" %}
 {% set version = "0.37.0" %}
-{% set sha256 = "6deffae76dca1596ab71e3ca839bf45a078af273" %}
+{% set sha256 = "ee3d96ce919b65262c035db5efb005d65fdac583dd2742786f68db3f51ff0919" %}
 
 package:
   name: {{ name }}
