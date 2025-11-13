@@ -1,6 +1,3 @@
-> [!IMPORTANT]
-> NOTE: For TileDB version updates, use the `for-cloud` branch following these instructions: https://github.com/conda-forge/libtiledb-sql-feedstock/issues/191
-
 About libtiledb-sql-feedstock
 =============================
 
