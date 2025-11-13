@@ -6,5 +6,3 @@ channel_sources:
   - tiledb/label/for-cloud,conda-forge
 channel_targets:
   - tiledb for-cloud
-lz4_c:
-  - 1.9.3
