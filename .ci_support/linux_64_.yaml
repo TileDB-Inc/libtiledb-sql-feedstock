@@ -19,7 +19,7 @@ krb5:
 libcurl:
 - '8'
 lz4_c:
-- 1.9.3
+- '1.10'
 ncurses:
 - '6'
 openssl:
