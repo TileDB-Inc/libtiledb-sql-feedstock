@@ -25,11 +25,11 @@ ncurses:
 openssl:
 - '3.5'
 pcre2:
-- '10.46'
+- '10.47'
 target_platform:
 - linux-64
 tiledb:
-- '2.29'
+- '2.30'
 xz:
 - '5'
 zlib:
