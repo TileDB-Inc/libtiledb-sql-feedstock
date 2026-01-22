@@ -31,7 +31,7 @@ requirements:
     - bison
   host:
     - openssl
-    - tiledb 2.29.*
+    - tiledb 2.30.*
     - libcurl
     - zlib
     - bzip2
