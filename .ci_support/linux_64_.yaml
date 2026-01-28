@@ -19,7 +19,7 @@ krb5:
 libcurl:
 - '8'
 lz4_c:
-- '1.10'
+- 1.9.3
 ncurses:
 - '6'
 openssl:
@@ -28,8 +28,6 @@ pcre2:
 - '10.47'
 target_platform:
 - linux-64
-tiledb:
-- '2.30'
 xz:
 - '5'
 zlib:
